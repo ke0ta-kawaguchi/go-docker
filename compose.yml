@@ -1,0 +1,8 @@
+services:
+  app:
+    build: ./app
+    tty: true
+    volumes:
+      - ./app:/app
+    ports:
+      - "8080:8080"
